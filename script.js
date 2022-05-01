@@ -5,8 +5,6 @@ let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGUESS = [];
 let nextLetter = 0;
 let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)];
-console.log(WORDS)
-console.log(rightGuessString)
 //picks random word from array WORDS and logs correct guess
 
 function initBoard() {
@@ -187,3 +185,7 @@ new Promise((resolve, reject) => {
 
     node.addEventListener('animationend', handleAnimationEnd, {once : true});
 });
+
+toastr.options = {
+    "positionClass": "toast-middle-full width"
+}
